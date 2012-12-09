@@ -23,7 +23,7 @@ top = {
 bass = {
 	\voiceTwo
 	\shiftOn
-	e,2. |
+	e,2.\mp |
 	e, |
 	e, |
 	e, |
