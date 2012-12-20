@@ -6,7 +6,6 @@
 \header { 
 	title = "Romance Anonimo"
 	subtitle = "Para Guitarra"
-	composer = "Miguel Llobet"
 	tagline = ""
 }
 
@@ -28,6 +27,24 @@ top = {
 	<fs'-4> <g'-4> <fs'-4> |
 	e' e' e' |
 	s2. \bar ":|"
+
+	% second section
+	\key e \major
+
+	<gs'-4>4 gs' gs' |
+	gs' <fs'-2> e' | 
+	<e'-4> <ds'-4> ds' |
+	ds' <cs'-2> ds' |
+	<cs''-3> cs'' cs'' |
+	cs'' <ds''-4> cs'' |
+	<cs''-4> b' b' |
+	<b'-1> <cs''-4> <ds''-4> |
+	<e''-4> e'' e'' |
+	e'' <ds''-3> <d''-2> |
+	<cs''-4> cs'' cs'' |
+	cs'' b' a' |
+	<gs'-4> <a'-4> fs' |
+	e' e' e' |
 }
 
 bass = {
@@ -51,9 +68,27 @@ bass = {
 	\once \shiftOnn
 	<e-2>4 <b,-1> <g,-3> |
 	\set fingeringOrientations = #'(right)
-	<e, b,-1 e-2 g b e'>2.\arpeggio |
+	<e, b,-1 e-2 g b e'>2.\arpeggio \bar ":|:"
+	
+	% second section
+	\key e \major
+	e, |
+	e, |
+	fs, |
+	fs, |
+	b, |
+	b, |
+	e, |
+	e, |
+	e, | 
+	e, |
+	a, |
+	a, |
+	e, |
+	b, |
+	<e-3>4 <b,-2> <fs,-3> |
+	<e, b,-2 e-3 gs-1 b e'>2. \bar ":|"
 }
-
 
 middle = {
 	\voiceFour
