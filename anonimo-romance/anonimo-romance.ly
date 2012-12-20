@@ -88,7 +88,7 @@ bass = {
 	e, |
 	b, |
 	<e-3>4 <b,-2> <fs,-3> |
-	<e, b,-2 e-3 gs-1 b e'>2. \bar ":|"
+	<e, b,-2 e-3 gs-1 b e'>2. \arpeggio \bar ":|"
 }
 
 middle = {
@@ -128,18 +128,23 @@ middle = {
 
 		gs' b <gs-1> gs' b gs gs' b gs |
 		gs' b gs <fs'-2> b gs e' b gs |
-		<e'-4\2> a <fs-3> ds' a fs ds' a fs |
-		ds' a fs <cs'-2> a fs ds' a fs |
-		<cs''-3\2> <fs'-2> <ds'\3> cs'' fs' ds' cs'' fs' ds' |
-		cs'' fs' ds' <ds''-4> fs' ds' cs'' fs' ds' |
+		\override TextSpanner #'(bound-details left text) = \markup { \small { II }}
+		<e'-4\2> \startTextSpan a <fs-3> ds' a fs ds' a fs |
+		ds' a fs <cs'-2> a fs ds' a fs \stopTextSpan |
+		\override TextSpanner #'(bound-details left text) = \markup { \small { VII }}
+		<cs''-3\2> \startTextSpan <fs'-2> <ds'\3> cs'' fs' ds' cs'' fs' ds' |
+		cs'' fs' ds' <ds''-4> fs' ds' cs'' fs' ds' \stopTextSpan |
 		cs'' <gs'-3\2> <e'-2\3> b' gs' e' b' gs' e' |
 		<b'-1> gs' e' <cs''-4> gs' e' ds'' gs' e' |
-		<e''-4> gs' e' e'' gs' e' e'' gs' e' |
-		e'' gs' e' ds'' gs' e' d'' gs' e' |
-		cs'' <e'\2> <cs'-2\3> cs'' e' cs' cs'' e' cs' |
-		cs'' e' cs' <b'-3> e' cs' a' e' cs' |
+		\override TextSpanner #'(bound-details left text) = \markup { \small { IX }}
+		<e''-4> \startTextSpan gs' e' e'' gs' e' e'' gs' e' |
+		e'' gs' e' ds'' gs' e' d'' gs' e' \stopTextSpan |
+		\override TextSpanner #'(bound-details left text) = \markup { \small { V }}
+		cs'' \startTextSpan <e'\2> <cs'-2\3> cs'' e' cs' cs'' e' cs' |
+		cs'' e' cs' <b'-3> e' cs' a' e' cs' \stopTextSpan |
 		<gs'-4> b <gs-1> gs' b gs gs' b gs |
-		<gs'-4> <ds'-3> a a' ds' a fs' ds' a |
+		\override TextSpanner #'(bound-details left text) = \markup { \small { II }}
+		<gs'-4> \startTextSpan <ds'-3> a a' ds' a fs' ds' a \stopTextSpan |
 		\once \override Beam #'positions = #'(0 . -3)
 		e' b <gs-1> e' b gs e' b gs |
 	}
