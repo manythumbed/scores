@@ -30,8 +30,7 @@ top = {
 	<fs'-4> fs' fs' |
 	<fs'-4> <g'-4> <fs'-4> |
 	e' e' e' |
-	\set fingeringOrientations = #'(right)
-	\hideNotes r16 \unHideNotes <e-2 g b e'>2.\arpeggio |
+	s2. |
 }
 
 %\override StringNumber #'add-stem-support = ##t
@@ -54,31 +53,34 @@ bass = {
 	e, |
 	b, |
 	b, |
+	\shiftOnn
 	<e-2>4 <b,-1> <g,-3> |
 	\set fingeringOrientations = #'(right)
-	\hideNotes r16 \unHideNotes <e, b,-1>2.\arpeggio |
+	<e, b,-1 e-2 g b e'>2.\arpeggio |
 }
 
 middle = {
 	\voiceFour
+	\override StringNumber #'add-stem-support = ##t
 	\scaleDurations 2/3 {
 		b'8 b g b'\< b g b' b g | 
 		b' b g\! a' b g g' b g | 
+		g' b g\> fs' b g e' b g\! |
+		e' b g g' b g b' b g |
+		e'' b g e'' b g e'' b g |	
+		e'' b g d'' b g c'' b g |
+		c'' e'\2 c'\3 b' e' c' a' e' c' | 
+		a' e' c' b' e' c' c'' e' c' |
+		b' fs'\2 <cs'-2\3> c'' fs' cs' b' fs' cs' |
+		ds'' fs'\2 <ds'-2\3> c'' fs' ds' b' fs' ds' |
+		b' b g a' b g g' b g |
+		g' b g fs' b g e' b g |
+		fs' b <a-3> fs' b a fs' b a |
+		fs' b a g' b a fs' b a |
+		e' b g e' b g e' b g |
+		s s s s s s s s s |
 	}
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. |
-	s2. \bar ":|"
+	
 }
 
 \score {
