@@ -73,10 +73,10 @@ middle = {
 		e' b g g' b g b' b g |
 		e'' b g e'' b g e'' b g |	
 		e'' b g d'' b g c'' b g |
-		\override TextSpanner #'(bound-details left text) = #"V"
+		\override TextSpanner #'(bound-details left text) = \markup { \small {V \super { 1 - 3 }}} 
 		c'' \startTextSpan e'\2 c'\3 b' e' c' a' e' c' | 
 		a' e' c' b' e' c' c'' e' c' \stopTextSpan |
-		\override TextSpanner #'(bound-details left text) = #"VII"
+		\override TextSpanner #'(bound-details left text) = \markup { \small { VII }}
 		b' \startTextSpan fs'\2 <cs'-2\3> c'' fs' cs' b' fs' cs' |
 		ds'' fs'\2 <ds'-2\3> c'' fs' ds' b' fs' ds' \stopTextSpan |
 		b' b g a' b g g' b g |
