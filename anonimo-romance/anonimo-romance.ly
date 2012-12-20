@@ -1,8 +1,6 @@
 \version "2.16.1"
 \language "english"
 
-%#(set-global-staff-size 24)
-
 \header { 
 	title = "Romance Anonimo"
 	subtitle = "Para Guitarra"
