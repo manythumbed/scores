@@ -30,7 +30,7 @@ top = {
 	<fs'-4> fs' fs' |
 	<fs'-4> <g'-4> <fs'-4> |
 	e' e' e' |
-	s2. |
+	s2. \bar ":|"
 }
 
 %\override StringNumber #'add-stem-support = ##t
