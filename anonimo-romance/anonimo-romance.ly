@@ -18,13 +18,10 @@ top = {
 	e' <g'-1> <b'-4>\glissando |
 	<e''-4> e'' e'' |
 	e'' <d''-2> <c''-4> |
-	\textSpannerUp
-	\override TextSpanner #'(bound-details left text) = #"V"
-	<c''-4> \startTextSpan <b'-3> a' |
-	a' <b'-3> <c''-4> \stopTextSpan |
-	\override TextSpanner #'(bound-details left text) = #"VII"
-	b' \startTextSpan <c''-3> b' | 
-	<ds''-4> <c''-3> b' \stopTextSpan |
+	<c''-4> <b'-3> a' |
+	a' <b'-3> <c''-4> |
+	b' <c''-3> b' | 
+	<ds''-4> <c''-3> b' |
 	<b'-4> <a'-2> <g'-2> |
 	<g'-2> <fs'-1> e' |
 	<fs'-4> fs' fs' |
@@ -32,8 +29,6 @@ top = {
 	e' e' e' |
 	s2. \bar ":|"
 }
-
-%\override StringNumber #'add-stem-support = ##t
 
 bass = {
 	\voiceTwo
@@ -70,10 +65,17 @@ middle = {
 		e' b g g' b g b' b g |
 		e'' b g e'' b g e'' b g |	
 		e'' b g d'' b g c'' b g |
-		c'' e'\2 c'\3 b' e' c' a' e' c' | 
-		a' e' c' b' e' c' c'' e' c' |
-		b' fs'\2 <cs'-2\3> c'' fs' cs' b' fs' cs' |
-		ds'' fs'\2 <ds'-2\3> c'' fs' ds' b' fs' ds' |
+		\textSpannerUp
+		\override TextSpanner #'style = #'line
+		\override TextSpanner #'(bound-details right text) =  \markup { \draw-line #'(0 . -1) }
+		\override TextSpanner #'bound-details #'left-broken #'text = ##f
+    \override TextSpanner #'bound-details #'right-broken #'text = ##f
+		\override TextSpanner #'(bound-details left text) = #"V"
+		c'' \startTextSpan e'\2 c'\3 b' e' c' a' e' c' | 
+		a' e' c' b' e' c' c'' e' c' \stopTextSpan |
+		\override TextSpanner #'(bound-details left text) = #"VII"
+		b' \startTextSpan fs'\2 <cs'-2\3> c'' fs' cs' b' fs' cs' |
+		ds'' fs'\2 <ds'-2\3> c'' fs' ds' b' fs' ds' \stopTextSpan |
 		b' b g a' b g g' b g |
 		g' b g fs' b g e' b g |
 		fs' b <a-3> fs' b a fs' b a |
