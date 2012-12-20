@@ -61,6 +61,7 @@ bass = {
 
 middle = {
 	\voiceFour
+	\override DynamicLineSpanner #'staff-padding = #2
 	\override StringNumber #'add-stem-support = ##t
 	\scaleDurations 2/3 {
 		b'8 b g b'\< b g b' b g | 
@@ -77,6 +78,7 @@ middle = {
 		g' b g fs' b g e' b g |
 		fs' b <a-3> fs' b a fs' b a |
 		fs' b a g' b a fs' b a |
+		\once \override Beam #'positions = #'(-1 . -3)
 		e' b g e' b g e' b g |
 		s s s s s s s s s |
 	}
