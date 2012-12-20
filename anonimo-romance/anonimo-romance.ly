@@ -54,10 +54,18 @@ bass = {
 	<e, b,-1 e-2 g b e'>2.\arpeggio |
 }
 
+
 middle = {
 	\voiceFour
 	\override DynamicLineSpanner #'staff-padding = #2
 	\override StringNumber #'add-stem-support = ##t
+	\textSpannerUp
+	% Set up barre appearance
+	\override TextSpanner #'style = #'line
+	\override TextSpanner #'(bound-details right text) =  \markup { \draw-line #'(0 . -1) }
+	\override TextSpanner #'(bound-details left-broken text) = ##f
+	\override TextSpanner #'(bound-details right-broken text) = ##f
+
 	\scaleDurations 2/3 {
 		b'8 b g b'\< b g b' b g | 
 		b' b g\! a' b g g' b g | 
@@ -65,11 +73,6 @@ middle = {
 		e' b g g' b g b' b g |
 		e'' b g e'' b g e'' b g |	
 		e'' b g d'' b g c'' b g |
-		\textSpannerUp
-		\override TextSpanner #'style = #'line
-		\override TextSpanner #'(bound-details right text) =  \markup { \draw-line #'(0 . -1) }
-		\override TextSpanner #'bound-details #'left-broken #'text = ##f
-    \override TextSpanner #'bound-details #'right-broken #'text = ##f
 		\override TextSpanner #'(bound-details left text) = #"V"
 		c'' \startTextSpan e'\2 c'\3 b' e' c' a' e' c' | 
 		a' e' c' b' e' c' c'' e' c' \stopTextSpan |
