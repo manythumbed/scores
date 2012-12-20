@@ -1,7 +1,7 @@
 \version "2.16.1"
 \language "english"
 
-#(set-global-staff-size 24)
+%#(set-global-staff-size 24)
 
 \header { 
 	title = "Romance Anonimo"
@@ -48,7 +48,7 @@ bass = {
 	e, |
 	b, |
 	b, |
-	\shiftOnn
+	\once \shiftOnn
 	<e-2>4 <b,-1> <g,-3> |
 	\set fingeringOrientations = #'(right)
 	<e, b,-1 e-2 g b e'>2.\arpeggio |
@@ -71,20 +71,20 @@ middle = {
 		b' b g\! a' b g g' b g | 
 		g' b g\> fs' b g e' b g\! |
 		e' b g g' b g b' b g |
-		e'' b g e'' b g e'' b g |	
+		e'' b g e'' \cresc b g e'' b g |	
 		e'' b g d'' b g c'' b g |
 		\override TextSpanner #'(bound-details left text) = \markup { \small {V \super { 1 - 3 }}} 
-		c'' \startTextSpan e'\2 c'\3 b' e' c' a' e' c' | 
+		c'' \startTextSpan e'\2 c'\3 b' \> e' c' a' e' c' \! | 
 		a' e' c' b' e' c' c'' e' c' \stopTextSpan |
 		\override TextSpanner #'(bound-details left text) = \markup { \small { VII }}
-		b' \startTextSpan fs'\2 <cs'-2\3> c'' fs' cs' b' fs' cs' |
-		ds'' fs'\2 <ds'-2\3> c'' fs' ds' b' fs' ds' \stopTextSpan |
+		b' \startTextSpan fs'\2 <cs'-2\3> \< c'' fs' cs' b' fs' cs' |
+		ds'' fs'\2 <ds'-2\3>\! c'' fs' ds' b' fs' ds' \stopTextSpan |
 		b' b g a' b g g' b g |
-		g' b g fs' b g e' b g |
+		g' b g fs' \> b g e' b g \! |
 		fs' b <a-3> fs' b a fs' b a |
-		fs' b a g' b a fs' b a |
+		fs' b a g' b a fs' b \> a |
 		\once \override Beam #'positions = #'(-1 . -3)
-		e' b g e' b g e' b g |
+		e' b g e' b g e' b g \! \p |
 		s s s s s s s s s |
 	}
 	
