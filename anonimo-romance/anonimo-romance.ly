@@ -33,7 +33,7 @@ top = {
 
 	<gs'-4>4 gs' gs' |
 	gs' <fs'-2> e' | 
-	<e'-4> <ds'-4> ds' |
+	e' <ds'-4> ds' |
 	ds' <cs'-2> ds' |
 	<cs''-3> cs'' cs'' |
 	cs'' <ds''-4> cs'' |
@@ -43,6 +43,7 @@ top = {
 	e'' <ds''-3> <d''-2> |
 	<cs''-4> cs'' cs'' |
 	cs'' b' a' |
+	gs' gs' gs' |
 	<gs'-4> <a'-4> fs' |
 	e' e' e' |
 }
@@ -121,6 +122,26 @@ middle = {
 		\once \override Beam #'positions = #'(-1 . -3)
 		e' b g e' b g e' b g \! \p |
 		s s s s s s s s s |
+
+		% second section
+		\key e \major
+
+		gs' b <gs-1> gs' b gs gs' b gs |
+		gs' b gs <fs'-2> b gs e' b gs |
+		<e'-4\2> a <fs-3> ds' a fs ds' a fs |
+		ds' a fs <cs'-2> a fs ds' a fs |
+		<cs''-3\2> <fs'-2> <ds'\3> cs'' fs' ds' cs'' fs' ds' |
+		cs'' fs' ds' <ds''-4> fs' ds' cs'' fs' ds' |
+		cs'' <gs'-3\2> <e'-2\3> b' gs' e' b' gs' e' |
+		<b'-1> gs' e' <cs''-4> gs' e' ds'' gs' e' |
+		<e''-4> gs' e' e'' gs' e' e'' gs' e' |
+		e'' gs' e' ds'' gs' e' d'' gs' e' |
+		cs'' <e'\2> <cs'-2\3> cs'' e' cs' cs'' e' cs' |
+		cs'' e' cs' <b'-3> e' cs' a' e' cs' |
+		<gs'-4> b <gs-1> gs' b gs gs' b gs |
+		<gs'-4> <ds'-3> a a' ds' a fs' ds' a |
+		\once \override Beam #'positions = #'(0 . -3)
+		e' b <gs-1> e' b gs e' b gs |
 	}
 	
 }
