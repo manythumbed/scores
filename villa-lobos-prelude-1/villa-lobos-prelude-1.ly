@@ -18,23 +18,30 @@ top = {
 	r8 <g b e'>8 <g b e'>8 <g b e'>4 <g b e'>8 |
 	r8 <g b e'>8 <g b e'>8 <g b e'>8 <b e'>8 <g b e'>8 |
 	r8 <g b e'>8 <g b e'>8 <g b e'>8 <b e'>8 <g b e'>8 |
-	r8 <c' e' a'>8 <c' e' a'>8 <c' e' a'>8 r8 <b c'\3 e'>8 |
-	r8 <f'\3 b\2 b\4>8 <f'\3 b\2 b\4>8 <f'\3 b\2 b\4>8 <f'\3 b\2 b\4>8 <f'\3 b\2 b\4>8 |
+	r8 <c' e' a'> <c' e' a'> <c' e' a'> r8 <b c'\3 e'> |
+	r8 <f'\3 b\2 b\4> <f'\3 b\2 b\4> <f'\3 b\2 b\4> <f'\3 b\2 b\4> <f'\3 b\2 b\4> |
+	r8 <as\4 b e'\3> <as\4 b e'\3> <a\4 b e'\3> <a\4 b ds'\3> <a\4 b ds'\3> |
+	r8 <ds a b> <ds a b> <ds a b>4 <ds a b>8 |
+	r8 <ds b g> <ds b g> <ds b g>4 <ds a b>8 |
 }
 
 melody = {
 	\override StringNumber #'stencil = ##f
 	\partial 4
-	b,4\glissando |
+	b,4 \glissando |
 	<e\5>2 <fs\5>4 |
 	<g\5>2 <a\4>4 |
-	<b\4>2 <b\4>4\glissando |
+	<b\4>2 <b\4>4 \glissando |
 	<d'\4>2 <c'\4>4 |
-	<b\4>2 <e\4>4\glissando |
+	<b\4>2 <e\4>4 \glissando |
 	<b\4>2 <g\5 b\4>4 |
 	<fs\5 b\4>2 <e\5 b\4>4 |
-	<a, a\4>2 <e\5>4 \glissando |
+	<a\4>2 <e\5>4 \glissando |
 	<g\5>2. |
+	<fs\5>2 <fs\5>4 |
+	b,2 a,4 |
+	g,2 b,4 \glissando | 
+	<e\5>2 <fs\5>4 |
 }
 
 empty = {
@@ -47,7 +54,13 @@ bass = {
 	e,2 s4 |
 	s4 s4 s4 |
 	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	e,2. |
+	s4 s4 s4 |
+	a,2 s4 |
 }
+
 \score {
 	\new StaffGroup <<
 		\new Staff	{
