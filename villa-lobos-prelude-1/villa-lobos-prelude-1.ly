@@ -29,6 +29,7 @@ top = {
 	r8 <g b e'> <g b e'> <g b e'>4 <g b e'>8 |
 	r8 <g b e'> <g b e'> <g b e'>4 <g b e'>8 |
 	r8 <g b e'> <g b e'> <g b e'> <g b e'> <g b e'> |
+	r8 <a'\2 e' e'\3> <a'\2 e' e'\3> <a'\2 e' e'\3> r8 <c'\4 a'\2 e'\3> |
 }
 
 melody = {
@@ -53,6 +54,7 @@ melody = {
 	<e'\4>2 <d'\4>4 |
 	<cs'\4>2 <g\4>4 |
 	<cs'\4>2. |
+	<c'\4>2 <fs\5>4 |
 }
 
 empty = {
@@ -74,6 +76,13 @@ bass = {
 	s4 s4 s4 |
 	s4 s4 s4 |
 	s4 s4 fs,4
+	e,2. |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	e,2. |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	a,2. |
 }
 
 \score {
