@@ -8,6 +8,7 @@
 }
 
 top = {
+	\override StringNumber #'stencil = ##f
 	\partial 4
 	s4 |
 	r8 <g b e'>8 <g b e'>8 <g b e'>4 <g b e'>8 |
@@ -17,9 +18,12 @@ top = {
 	r8 <g b e'>8 <g b e'>8 <g b e'>4 <g b e'>8 |
 	r8 <g b e'>8 <g b e'>8 <g b e'>8 <b e'>8 <g b e'>8 |
 	r8 <g b e'>8 <g b e'>8 <g b e'>8 <b e'>8 <g b e'>8 |
+	r8 <c' e' a'>8 <c' e' a'>8 <c' e' a'>8 r8 <b c'\3 e'>8 |
+	r8 <f'\3 b\2 b\4>8 <f'\3 b\2 b\4>8 <f'\3 b\2 b\4>8 <f'\3 b\2 b\4>8 <f'\3 b\2 b\4>8 |
 }
 
 melody = {
+	\override StringNumber #'stencil = ##f
 	\partial 4
 	b,4\glissando |
 	<e\5>2 <fs\5>4 |
@@ -37,6 +41,7 @@ empty = {
 }
 
 bass = {
+	\override StringNumber #'stencil = ##f
 	\partial 4
 	s4 |
 	e,2 s4 |
