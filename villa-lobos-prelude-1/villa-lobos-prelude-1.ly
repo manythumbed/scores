@@ -30,6 +30,10 @@ top = {
 	r8 <g b e'> <g b e'> <g b e'>4 <g b e'>8 |
 	r8 <g b e'> <g b e'> <g b e'> <g b e'> <g b e'> |
 	r8 <a'\2 e' e'\3> <a'\2 e' e'\3> <a'\2 e' e'\3> r8 <c'\4 a'\2 e'\3> |
+	r8 <a'\2 e' e'\3> <a'\2 e' e'\3> <a'\2 e' e'\3> <a'\2 e' e'\3> <a'\2 e' e'\3> | 
+	r8 <g b e'> <g b e'> <g b e'>4 <g b e'>8 |
+	r8 <cs' e' bf'>8 <cs' e' bf'> <cs' e' bf'> r8 <c' ef' a'> |
+	r8 <ds' fs' c''> <ds' fs' c''> <ds' fs' c''> r8 <d' f' b'> |
 }
 
 melody = {
@@ -55,6 +59,10 @@ melody = {
 	<cs'\4>2 <g\4>4 |
 	<cs'\4>2. |
 	<c'\4>2 <fs\5>4 |
+	<c'\4>2. |
+	<b\4>2 e4 |
+	<g\4>2 <fs\4>4 |
+	<a\4>2 <gs\4>4 |
 }
 
 empty = {
