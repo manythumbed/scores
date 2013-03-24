@@ -36,6 +36,8 @@ top = {
 	r8 <cs' e' bf'>8 <cs' e' bf'> <cs' e' bf'> r8 <c' ef' a'> |
 	r8 <ds' fs' c''> <ds' fs' c''> <ds' fs' c''> r8 <d' f' b'> |
 	r8 <f' gs' d''> r8 <e' g' cs''> r8 <fs' a' ef''> |
+	r8 <f' gs' d''> r8 <gs' b' f''> r8 <f' gs' d''> |
+	r8 <d' f' b'> r8 <b d' gs'> r8 <gs b f'> |
 }
 
 melody = {
@@ -66,6 +68,8 @@ melody = {
 	<g\4>2 <fs\4>4 |
 	<a\4>2 <gs\4>4 |
 	<b\4>4 <as\4> <c'\4> |
+	<b\4>4 <d'\4> <b\4> |
+	<gs\4>4 <f\4> d |
 }
 
 empty = {
