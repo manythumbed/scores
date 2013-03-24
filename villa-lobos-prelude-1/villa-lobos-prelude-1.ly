@@ -2,8 +2,9 @@
 \language "english"
 
 \header { 
-	title = "Prelude No 1"
+	title = "Prélude No 1"
 	subtitle = "in E minor"
+	composer ="Heitor Villa-Lobos"
 	tagline = ""
 }
 
