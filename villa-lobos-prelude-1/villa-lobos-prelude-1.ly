@@ -46,6 +46,12 @@ top = {
 	r8 <g b e'> <g b e'> <g b e'>4 <g b e'>8 |
 	r8 <b\2 gs' es''> <b\2 a' fs''> <b\2 gs' es''> <b\2 a' fs''> <b\2 gs' es''> |
 	r8 <b\2 g' e''> <b\2 af' f''> <b\2 g' e''> <b\2 af' f''> <b\2 g' e''> |
+	r8 <b\2 fs' ds''> <b\2 g' e''> <b\2 fs' ds''> <b\2 g' e''> <b\2 fs' ds''> |
+	r8 <b\2 es' css''> <b\2 fs' ds''> <b\2 es' css''> <b\2 fs' ds''> <b\2 es' css''> |
+	<b\2 fs' ds''> <b\2 es' css''> <b\2 fs' ds''> <b\2 es' css''> <b\2 fs' ds''> <b\2 es' css''> |
+	<b\2 fs' ds''> <b\2 es' css''> <b\2 fs' ds''> <b\2 es' css''> <b\2 fs' ds''> <b\2 es' css''> |
+	<b\2 fs' ds''>4 r4 r8 <g b e'> ~ |
+	<g b e'> <g b e'>4 <g b e'> <g b e'>8 |
 }
 
 melody = {
@@ -86,6 +92,12 @@ melody = {
 	<fs'\4>2 <e'\4>4 | 
 	<d'\4>2 <d'\4>4 |
 	<cs'\4>2 <cs'\4>4 |
+	<c'\4>2 <c'\4>4 |
+	<b\4>2 <b\4>4 |
+	<b\4>2 <b\4>4 |
+	<b\4>2.
+	<b\4>8 \glissando <fs\4> <g\4> <ds\5> <e\5> <c\5> |
+	<b,\5> a, g, fs, e, g, |
 }
 
 empty = {
