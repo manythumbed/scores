@@ -44,6 +44,8 @@ top = {
 	r8 <g b e'> <g b e'> <g b e'>4 <g b e'>8 |
 	r8 <g b e'> <g b e'> <g b e'>4 <g b e'>8 |
 	r8 <g b e'> <g b e'> <g b e'>4 <g b e'>8 |
+	r8 <b\2 gs' es''> <b\2 a' fs''> <b\2 gs' es''> <b\2 a' fs''> <b\2 gs' es''> |
+	r8 <b\2 g' e''> <b\2 af' f''> <b\2 g' e''> <b\2 af' f''> <b\2 g' e''> |
 }
 
 melody = {
@@ -82,6 +84,8 @@ melody = {
 	<g\5>2 <a\4>4 |
 	<b\4>2 <b\4>4 |
 	<fs'\4>2 <e'\4>4 | 
+	<d'\4>2 <d'\4>4 |
+	<cs'\4>2 <cs'\4>4 |
 }
 
 empty = {
