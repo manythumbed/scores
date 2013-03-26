@@ -54,6 +54,10 @@ top = {
 	<g b e'> <g b e'>4 <g b e'> <g b e'>8 |
 	r8 <bf\4 e'\3 g'> <e'\3 e' g'> <bf\4 e'\3 g'>  <e'\3 e' g'> <bf\4 e'\3 g'> |
 	r8 <a\4 ds'\3 fs'> <ds'\3 e' fs'> <a\4 ds'\3 fs'>  <ds'\3 e' fs'> <a\4 ds'\3 fs'> |
+	r8 <g'\3^\flageolet b'\2^\flageolet e''\1^\flageolet> <g'\3 b'\2 e'\1> <b e' g'\3> <g b e'> <e g b> |
+	<e g b> <e g b> <e g b> <e g b> <e g b> <e g b> |
+	r8 <bf\4 e'\3 g'> <e'\3 e' g'> <bf\4 e'\3 g'>  <e'\3 e' g'> <bf\4 e'\3 g'> |
+	r8 <a\4 ds'\3 fs'> <ds'\3 e' fs'> <a\4 ds'\3 fs'>  <ds'\3 e' fs'> <a\4 ds'\3 fs'> |
 }
 
 melody = {
@@ -100,6 +104,10 @@ melody = {
 	<b\4>2.
 	<b\4>8 \glissando <fs\4> <g\4> <ds\5> <e\5> <c\5> |
 	<b,\5> a, g, fs, e, g, \glissando |
+	<c\6>2 <c\6>4 |
+	<b,\6>2 <b,\6>4 |
+	<e\6>2._\flageolet
+	<c\5>8 <b,\5> a, g, e, g, | 
 	<c\6>2 <c\6>4 |
 	<b,\6>2 <b,\6>4 |
 }
