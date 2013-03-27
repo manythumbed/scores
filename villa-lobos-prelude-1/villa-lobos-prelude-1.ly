@@ -58,6 +58,11 @@ top = {
 	<e g b> <e g b> <e g b> <e g b> <e g b> <e g b> |
 	r8 <bf\4 e'\3 g'> <e'\3 e' g'> <bf\4 e'\3 g'>  <e'\3 e' g'> <bf\4 e'\3 g'> |
 	r8 <a\4 ds'\3 fs'> <ds'\3 e' fs'> <a\4 ds'\3 fs'>  <ds'\3 e' fs'> <a\4 ds'\3 fs'> |
+	r8 <g'\3^\flageolet b'\2^\flageolet e''\1^\flageolet> <g'\3 b'\2 e'\1> <b e' g'\3> <g b e'> <e g b> |
+	<g b e'>8 <g b e'> <d g b> <d g b> <d g b> <d g b> |
+	r8 <e g b> <g b e'> <e g b> <g b e'> <e g b> |
+	r8 <f a c'> <a c' f'> <f a c'> <a c' f'> <f a c'> |
+	r8 <ds a b>[ <a b fs'> <ds a b>] \override Stem #'direction = #DOWN <a b> <a b> \revert Stem #'direction \bar "||"
 }
 
 melody = {
@@ -110,9 +115,67 @@ melody = {
 	<c\5>8 <b,\5> a, g, e, g, | 
 	<c\6>2 <c\6>4 |
 	<b,\6>2 <b,\6>4 |
+	<e\6>2._\flageolet
+	<d\5>8 <c\5> <b,\5> a, g, fs, |
+	<cs\5>2. |
+	<c\5>2. |
+	<b,\5>2. |
 }
 
-empty = {
+other = {
+	\partial 4
+	s4 |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s2. |
+	s4 s4 g'4 |
 }
 
 bass = {
@@ -151,6 +214,25 @@ bass = {
 	s4 s4 s4 |
 	s4 s4 s4 |
 	e,2. |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	s4 s4 s4 |
+	e,2. |
+	e,2. |
+	e,2. |
 }
 
 \score {
@@ -160,10 +242,10 @@ bass = {
 			\key g \major
 			\time 3/4
 			\tempo "Andantino exprissivo"
-			<< \top \\ \melody \\ \empty \\ \bass >>
+			<< \top \\ \melody \\ \other \\ \bass >>
 		}
 		\new TabStaff	{
-			<< \top \\ \melody \\ \empty \\ \bass >>
+			<< \top \\ \melody \\ \other \\ \bass >>
 		}
 	>>
 	\layout {
