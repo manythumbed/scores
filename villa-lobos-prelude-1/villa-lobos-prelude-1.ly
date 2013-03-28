@@ -63,6 +63,12 @@ top = {
 	r8 <e g b> <g b e'> <e g b> <g b e'> <e g b> |
 	r8 <f a c'> <a c' f'> <f a c'> <a c' f'> <f a c'> |
 	r8 <ds a b>[ <a b fs'> <ds a b>] \override Stem #'direction = #DOWN <a b> <a b> \revert Stem #'direction \bar "||"
+	\key e \major
+	\time 2/4
+	e,16 b, e\4 gs\4 \override Stem #'direction = #UP b\3 e'\2 gs' b' \revert Stem #'direction |
+	\time 3/4
+	\override Stem #'direction = #UP
+	b'8 a' gs' e' gs' fs' |
 }
 
 melody = {
@@ -120,6 +126,11 @@ melody = {
 	<cs\5>2. |
 	<c\5>2. |
 	<b,\5>2. |
+	\key e \major
+	\time 2/4
+	s4 s8 b8\3 |
+	\time 3/4
+	b4 b <b, e as cs'> |
 }
 
 other = {
@@ -233,13 +244,16 @@ bass = {
 	e,2. |
 	e,2. |
 	e,2. |
+	\key e \major
+	\time 2/4
+	e,2 |
 }
 
 \score {
 	\new StaffGroup <<
 		\new Staff	{
 			\clef "treble_8"
-			\key g \major
+			\key e \minor
 			\time 3/4
 			\tempo "Andantino exprissivo"
 			<< \top \\ \melody \\ \other \\ \bass >>
