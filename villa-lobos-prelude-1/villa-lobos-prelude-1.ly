@@ -66,9 +66,16 @@ top = {
 	\key e \major
 	\time 2/4
 	e,16 b, e\4 gs\4 \override Stem #'direction = #UP b\3 e'\2 gs' b' \revert Stem #'direction |
-	\time 3/4
 	\override Stem #'direction = #UP
+	\time 3/4
 	b'8 a' gs' e' gs' fs' |
+	\time 2/4
+	s16 b, e\4 gs\4 \override Stem #'direction = #UP b\3 e'\2 gs' b' \revert Stem #'direction |
+	\override Stem #'direction = #UP
+	\time 3/4
+	b'8 a' gs' e' gs' fs' |
+	\time 2/4
+	s16 b, e\4 gs\4 \override Stem #'direction = #UP b\3 e'\2 gs' b' \revert Stem #'direction |
 }
 
 melody = {
@@ -130,7 +137,13 @@ melody = {
 	\time 2/4
 	s4 s8 b8\3 |
 	\time 3/4
-	b4 b <b, e as cs'> |
+	b4 b <b, e a cs'> |
+	\time 2/4
+	s4 s8 b8\3 |
+	\time 3/4
+	b4 b <b, e a cs'> |
+	\time 2/4
+	s4 s8 b8\3 |
 }
 
 other = {
@@ -187,6 +200,16 @@ other = {
 	s2. |
 	s2. |
 	s4 s4 g'4 |
+	\time 2/4
+	s2 |
+	\time 3/4
+	s2.|
+	\time 2/4
+	e'4 s 4 |
+	\time 3/4
+	s2.|
+	\time 2/4
+	e'4 s 4 |
 }
 
 bass = {
@@ -247,6 +270,16 @@ bass = {
 	\key e \major
 	\time 2/4
 	e,2 |
+	\time 3/4
+	s2. |
+	\time 2/4
+	e,2 |
+	\time 3/4
+	s2. |
+	\time 2/4
+	e,2 |
+	\time 3/4
+	s2. |
 }
 
 \score {
