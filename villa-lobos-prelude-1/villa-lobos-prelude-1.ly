@@ -76,6 +76,11 @@ top = {
 	b'8 a' gs' e' gs' fs' |
 	\time 2/4
 	s16 b, e\4 gs\4 \override Stem #'direction = #UP b\3 e'\2 gs' b' \revert Stem #'direction |
+	\time 3/4
+	\override Stem #'direction = #UP
+	e''4 ds'' cs'' |
+	<e' gs' b'>4 ~ <e' gs' b'>16 b, e\4 gs\4 b\3 e'\3 gs'\2 b' |
+	e''4 d'' c'' |
 }
 
 melody = {
@@ -144,6 +149,9 @@ melody = {
 	b4 b <b, e a cs'> |
 	\time 2/4
 	s4 s8 b8\3 |
+	\time 3/4
+	s2.
+	s4 s4 s8 b8 |
 }
 
 other = {
@@ -279,7 +287,9 @@ bass = {
 	\time 2/4
 	e,2 |
 	\time 3/4
-	s2. |
+	<a, cs'\4 e'\3 a'>2. |
+	e,2. |
+	<a, c'\4 f'\3 a'>2. |
 }
 
 \score {
