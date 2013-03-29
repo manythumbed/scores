@@ -185,6 +185,7 @@ melody = {
 }
 
 other = {
+	\override StringNumber #'stencil = ##f
 	\partial 4
 	s4 |
 	s2. |
@@ -262,6 +263,11 @@ other = {
 	e'4 s4 s4 |
 	\time 2/4
 	e'4 s 4 |
+	\time 3/8
+	s4. |
+	s4. |
+	s4. |
+	b'8 fs'\2 \glissando b'\2^\flageolet |
 }
 
 bass = {
@@ -344,6 +350,11 @@ bass = {
 	e,2 <b, e a cs'>4 |
 	\time 2/4
 	e,2 |
+	\time 3/8
+	s4. |
+	s4. |
+	s4. |
+	<b,\6 fs b ds' fs'>8 <b\4 ds'> g'\3^\flageolet |
 }
 
 \score {
