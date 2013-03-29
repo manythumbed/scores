@@ -268,6 +268,13 @@ other = {
 	s4. |
 	s4. |
 	b'8 fs'\2 \glissando b'\2^\flageolet |
+	b'8 fs'\2 \glissando b'\2^\flageolet |
+	c''8 g'\2 \glissando b'\2^\flageolet |
+	b'8 fs'\2 \glissando b'\2^\flageolet |
+	a'8 e'\2 \glissando b'\2^\flageolet |
+	g'8 ds'\2 \glissando b'\2^\flageolet |
+	f'8 c'\2 \glissando b'\2^\flageolet |
+	fs'8 ds'\2 \glissando b'\2^\flageolet |
 }
 
 bass = {
@@ -354,7 +361,14 @@ bass = {
 	s4. |
 	s4. |
 	s4. |
-	<b,\6 fs b ds' fs'>8 <b\4 ds'> g'\3^\flageolet |
+	<b,\6 fs b ds' fs'>8 <b\4 ds'> g'\3_\flageolet |
+	<b,\6 fs b ds' fs'>8 <b\4 ds'> g'\3_\flageolet |
+	<c\6 g\5 c' e'\3 g'>8 <c'\4 e'\3> g'\3_\flageolet |
+	<b,\6 fs b ds' fs'>8 <b\4 ds'> g'\3_\flageolet |
+	<a,\6 e a\4 cs' e'\2>8 <a\4 cs'> g'\3_\flageolet |
+	<g,\6 d g b d'\2>8 <b d'\2> g'\3_\flageolet |
+	<f,\6 c f a c'>8 <f a> g'\3_\flageolet |
+	<fs,\6 b, fs a ds'> <fs a> s8 |
 }
 
 \score {
