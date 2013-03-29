@@ -81,6 +81,13 @@ top = {
 	e''4 ds'' cs'' |
 	<e' gs' b'>4 ~ <e' gs' b'>16 b, e\4 gs\4 b\3 e'\3 gs'\2 b' |
 	e''4 d'' c'' |
+	<e' gs' b'>4 ~ <e' gs' b'>16 b, e\4 gs\4 b\3 e'\3 gs'\2 b' |
+	b'8 a' gs' e' gs' fs' |
+	\time 2/4
+	s16 b, e\4 gs\4 \override Stem #'direction = #UP b\3 e'\2 gs' b' \revert Stem #'direction |
+	\time 3/4
+	\override Stem #'direction = #UP
+	b'8 a' gs' e' gs' fs' |
 }
 
 melody = {
@@ -152,6 +159,13 @@ melody = {
 	\time 3/4
 	s2.
 	s4 s4 s8 b8 |
+	s2.
+	s4 s4 s8 b8 |
+	b4 b <b, e a cs'> |
+	\time 2/4
+	s4 s8 b8\3 |
+	\time 3/4
+	b4 b <b, e a cs'> |
 }
 
 other = {
@@ -218,6 +232,16 @@ other = {
 	s2.|
 	\time 2/4
 	e'4 s 4 |
+	\time 3/4
+	s2.|
+	s2.|
+	s2.|
+	s2.|
+	s2.|
+	\time 2/4
+	e'4 s 4 |
+	\time 3/4
+	s2.|
 }
 
 bass = {
@@ -290,6 +314,12 @@ bass = {
 	<a, cs'\4 e'\3 a'>2. |
 	e,2. |
 	<a, c'\4 f'\3 a'>2. |
+	e,2. |
+	s2. |
+	\time 2/4
+	e,2 |
+	\time 3/4
+	s2. |
 }
 
 \score {
