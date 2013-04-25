@@ -380,13 +380,17 @@ bass = {
 			\tempo "Andantino exprissivo"
 			<< \top \\ \melody \\ \other \\ \bass >>
 		}
-		\new TabStaff	{
+		\new TabStaff	\with {
+			fontSize = #-6
+			\override StaffSymbol #'staff-space = #(magstep -2)
+		} {
 			<< \top \\ \melody \\ \other \\ \bass >>
 		}
 	>>
 	\layout {
     \context {
       \Score
+			\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
     }
   }
 }
