@@ -18,7 +18,7 @@ top = {
 	r8 <g b e'>8 <g b e'>8 <g b e'>4 <g b e'>8 |
 	r8 <g b e'>8 <g b e'>8 <g b e'>4 <g b e'>8 |
 	r8 <g b e'>8 <g b e'>8 <g b e'>8 <b e'>8 <g b e'>8 |
-	r8 <g b e'>8 <g b e'>8 <g b e'>8 <b e'>8 <g b e'>8 |
+	<b e'>8 <g b e'>8 <g b e'>8 <g b e'>8 <b e'>8 <g b e'>8 |
 	r8 <c' e' a'> <c' e' a'> <c' e' a'> r8 <b c'\3 e'> |
 	r8 <f'\3 b\2 b\4> <f'\3 b\2 b\4> <f'\3 b\2 b\4> <f'\3 b\2 b\4> <f'\3 b\2 b\4> |
 	r8 <as\4 b e'\3> <as\4 b e'\3> <a\4 b e'\3> <a\4 b ds'\3> <a\4 b ds'\3> |
@@ -390,7 +390,7 @@ bass = {
 	\layout {
     \context {
       \Score
-			\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 16)
+			\override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 24)
     }
   }
 }
